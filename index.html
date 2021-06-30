@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="./scripts/script.js"></script>
+    <link rel="stylesheet" href="./style/style.css">
+  
+    <title>Cord A Code Editor</title>
+
+</head>
+<body>
+    <div class="editor">
+        <textarea id="html" placeholder="HTML Code here" 
+                  oninput="showPreview()"></textarea>
+        <textarea id="css" placeholder="Css Code Here" 
+                  oninput="showPreview()"></textarea>
+        <textarea id="js" placeholder="JavaScript Code Here" 
+                  oninput="showPreview()"></textarea>				
+      </div>
+      <div class="preview">
+        <iframe id="preview-window"></iframe>
+      </div>
+</body>
+<script src="https://cdn.jsdelivr.net/npm/darkmode-js@1.5.7/lib/darkmode-js.min.js"></script>
+<script>
+      const options = {
+    bottom: '64px', // default: '32px'
+    right: 'unset', // default: '32px'
+    left: '32px', // default: 'unset'
+    time: '0.5s', // default: '0.3s'
+    mixColor: '#36393E', // default: '#fff'
+    backgroundColor: '#FF0000 ',  // default: '#fff'
+    buttonColorDark: '#fff',  // default: '#100f2c'
+    buttonColorLight: '#36393E', // default: '#fff'
+    saveInCookies: true, // default: true,
+    label: '🕶', // default: ''
+    autoMatchOsTheme: true // default: true
+  }
+  
+  const darkmode = new Darkmode(options);
+  darkmode.showWidget();
+  function addDarkmodeWidget() {
+    new Darkmode().showWidget();
+  }
+  window.addEventListener('load', addDarkmodeWidget);
+</script>
+</html>
