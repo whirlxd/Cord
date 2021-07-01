@@ -1,0 +1,24 @@
+{
+    "name": "Cord",
+    "short_name": "editor",
+    "start_url": "/",
+    "theme_color": "#fff",
+    "background_color": "#fff",
+    "display": "standalone",
+    "description": "A Text editor in development",
+    "icons": [
+        {
+            "src": "logo.jpg",
+            "sizes": "560x560",
+            "type": "image/png",
+            "purpose": "any maskable"
+        }
+    ],
+    "splash_screen": [
+        {
+            "src": "logo.jpg",
+            "sizes": "800x100",
+            "type": "image/png"
+        }
+    ]
+}
