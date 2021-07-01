@@ -1,5 +1,5 @@
 const cacheName = ["app"]
-const filesToCache = ["somefile", "anotherfile"]
+const filesToCache = ["index.html", "Style/style.css" , "Scripts/script.js"]
 
 self.addEventListener("install", (e) => {
     e.waitUntil(
